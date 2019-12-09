@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="it">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Ristorante ALKIMIA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="KAMA srl" />
+    <!-- styles -->
+    <link rel="stylesheet" href="static/css/fancybox/jquery.fancybox.css">
+    <link href="static/css/bootstrap.css" rel="stylesheet" />
+    <link href="static/css/bootstrap-theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="static/css/slippry.css">
+    <link href="static/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="static/color/default.css">
+    <script src="static/js/modernizr.custom.js"></script>
+  </head>
+
+  <body>
+    <header>
+
+      <div id="navigation" class="navbar navbar-inverse navbar-fixed-top default" role="navigation">
+        <div class="container">
+
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a class="navbar-brand" href="#intro">
+                <img class="hidden-xs" src="{{ url_for('static', filename='logo_rist_alkimia_nobackgrd_wh_200x83.png') }}" alt="Ristorante ALKIMIA" width="100%" height="100%">
+                <img class="visible-xs" src="{{ url_for('static', filename='logo_rist_alkimia_nobackgrd_wh_200x83.png') }}" alt="Ristorante ALKIMIA" width="50%" height="50%"></a>
+          </div>
+
+          <div class="navigation">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <nav>
+                <ul class="nav navbar-nav navbar-right" margin-top="0px">
+                  <li class="current"><a href="#intro"><i class="fa fa-home" aria-hidden="false"></i></a></li>
+                  <li><a href="#menu">I Menù</a></li>
+                  <li><a href="#foto">Galleria</a></li>
+                  <li><a href="#contact">Contatto</a></li>
+                </ul>
+              </nav>
+            </div>
+            <!-- /.navbar-collapse -->
+          </div>
+
+        </div>
+      </div>
+
+    </header>
+    <!-- section intro -->
+    <section id="intro">
+      <ul id="slippry-slider">
+        <li>
+          <a href="#slide1"><img src="{{ url_for('static', filename='patioGiorno.jpg') }}" alt="Benvenuti..."></a>
+        </li>
+        <li>
+          <a href="#slide2"><img src="{{ url_for('static', filename='sala_da_bar.jpg') }}" alt="Accomodatevi..."></a>
+        </li>
+        <li>
+          <a href="#slide3"><img src="{{ url_for('static', filename='agnello.jpg') }}" alt="Buon appetito..."></a>
+        </li>
+      </ul>
+    </section>
+    <!-- end intro -->
+    <!-- Menu section -->
+    <section id="menu" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="heading">
+              <h3><span>Menù</span></h3>
+            </div>
+            <div class="sub-heading">
+              <p>
+                <a href="{{ url_for('static', filename='menu.pdf') }}" download="menu_alkima_inverno" class="btn btn-lg btn-theme">Scaricare il nostro menù invernale.</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end menu section -->
+    <!-- foto section -->
+    <section id="foto" class="section gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="heading">
+              <h3><span>Galleria Foto</span></h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="grid effect" id="grid">
+              <li><a href="{{ url_for('static', filename='sala_da_bar.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='sala_da_bar.jpg') }}" alt="Sala Interna" /></a></li>
+              <li><a href="{{ url_for('static', filename='sala_verso_retro.jpeg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='sala_verso_retro.jpeg') }}" alt="Sala Verso Cucina" /></a></li>
+              <li><a href="{{ url_for('static', filename='sala_verso_lago.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='sala_verso_lago.jpg') }}" alt="Sala Verso Lago" /></a></li>
+              <li><a href="{{ url_for('static', filename='SeraMagica.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='SeraMagica.jpg') }}" alt="Magia Estiva" /></a></li>
+              <li><a href="{{ url_for('static', filename='sandwichBoard.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='sandwichBoard.jpg') }}" alt="Lavagna a Mezzogiorno" /></a></li>
+              <li><a href="{{ url_for('static', filename='patioGiorno.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='patioGiorno.jpg') }}" alt="Pranzo sul Lago" /></a></li>
+              <li><a href="{{ url_for('static', filename='agnello.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='agnello.jpg') }}" alt="Carré d'Agnello" /></a></li>
+              <li><a href="{{ url_for('static', filename='tagliatelle_piccione_quad.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='tagliatelle_piccione_quad.jpg') }}" alt="Tagliatelle Piccione" /></a></li>
+              <li><a href="{{ url_for('static', filename='sfogliaCarciofi.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='sfogliaCarciofi.jpg') }}" alt="Sfoglia con Carciofi" /></a></li>
+              <li><a href="{{ url_for('static', filename='salmone.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='salmone.jpg') }}" alt="Filetto di Salmone" /></a></li>
+              <li><a href="{{ url_for('static', filename='cappesante.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='cappesante.jpg') }}" alt="Cappesante con Lardo" /></a></li>
+              <li><a href="{{ url_for('static', filename='tartare_salmone.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='tartare_salmone.jpg') }}" alt="Tartare di Salmone" /></a></li>
+              <li><a  href="{{ url_for('static', filename='storione.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name">
+                <img src="{{ url_for('static', filename='storione.jpg') }}" alt="Trancio di Storione" /></a></li>
+              <li><a href="{{ url_for('static', filename='crostatina.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='crostatina.jpg') }}" alt="Crostatina di Frutta" /></a></li>
+              <li><a href="{{ url_for('static', filename='sabbiosa.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='sabbiosa.jpg') }}" alt="Torta Sabbiosa" /></a></li>
+              <li><a href="{{ url_for('static', filename='tortaGianduia.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='tortaGianduia.jpg') }}" alt="Torta Gianduia" /></a></li>
+              <li><a href="{{ url_for('static', filename='cuoriDolci.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='cuoriDolci.jpg') }}" alt="Biscotti" /></a></li>
+              <li><a href="{{ url_for('static', filename='Noi_crop.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='Noi_crop.jpg') }}" alt="Alessio e Kate" /></a></li>
+              <!--  <li><a href="static/img/portfolio/12.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="static/img/portfolio/12.jpg" alt="" /></a></li>
+              <li><a href="static/img/portfolio/13.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="static/img/portfolio/13.jpg" alt="" /></a></li>
+              <li><a href="static/img/portfolio/14.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="static/img/portfolio/14.jpg" alt="" /></a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end foto section -->
+    <!-- contact section -->
+    <section id="contact" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="heading">
+            <h3><span>Get in touch</span></h3>
+          </div>
+          <div class="sub-heading">
+            <p>
+              Lorem ipsum dolor sit amet, mutat paulo simul per no, assum fastidii vituperata eam no.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h4><i class="icon-envelope"></i><strong>Contattaci</strong></h4>
+          <!-- start contact form -->
+          <div class="cform" id="contact-form">
+
+            <div id="sendmessage">Il suo messaggio è stato inviato. Grazie!</div>
+            <div id="errormessage">C'è stato un problema con il suo messaggio. La preghiamo di riprovare.</div>
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Nome" data-rule="minlen:4" data-msg="Il nome deve avere almeno 4 caratteri.">
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Per favore, inserire un indirizzo email valido.">
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Oggetto -- RICHIESTA PRENOTAZIONE oppure COLLABORAZIONE" data-rule="minlen:8" data-msg="Per favore, inserire almeno 8 caratteri per l'oggetto.">
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" placeholder="Messaggio" data-rule="required" data-msg="Aggiungere il testo del tuo messaggio."></textarea>
+                <div class="validation"></div>
+              </div>
+
+              <div class="text-center"><button type="submit" class="btn btn-lg btn-theme">Invia</button></div>
+            </form>
+          </div>
+          <!-- END contact form -->
+        </div>
+        <div class="col-md-6">
+          <h4><i class="icon-envelope"></i><strong>Dove siamo</strong></h4>
+          <!-- map -->
+          <div id="section-map" class="clearfix">
+            <iframe width="600" height="400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ6-r_MUcXhEcROfX2hjJS9P8&key=AIzaSyCzkPDdlsDP1RUWiQYvZP0BTCjPgOm_Wrw" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- end contact section -->
+
+    <footer>
+      <div class="verybottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="aligncenter">
+                <ul class="social-network social-circle">
+                  <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                  <li><a href="https://www.instagram.com/alkimia_bellano" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="https://twitter.com/alkimia_bellano" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="https://www.google.com/maps/place/Ristorante+Alkimia/@46.0427189,9.2997591,15z/data=!4m5!3m4!1s0x0:0xfff4523286f6f539!8m2!3d46.0427189!4d9.2997591" class="icoGoogle" title="Google"><i class="fa fa-google-plus"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="aligncenter">
+                <p>
+                  &copy; Ristorante Alkimia di KAMA srl
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="#" class="scrollup"><i class="fa fa-angle-up fa-2x"></i></a>
+    <!-- javascript -->
+    <script src="static/js/jquery-1.9.1.min.js"></script>
+    <script src="static/js/jquery.easing.js"></script>
+    <script src="static/js/classie.js"></script>
+    <script src="static/js/bootstrap.js"></script>
+    <script src="static/js/slippry.min.js"></script>
+    <script src="static/js/nagging-menu.js"></script>
+    <script src="static/js/jquery.nav.js"></script>
+    <script src="static/js/jquery.scrollTo.js"></script>
+    <script src="static/js/jquery.fancybox.pack.js"></script>
+    <script src="static/js/jquery.fancybox-media.js"></script>
+    <script src="static/js/masonry.pkgd.min.js"></script>
+    <script src="static/js/imagesloaded.js"></script>
+    <script src="static/js/jquery.nicescroll.min.js"></script>
+    <script src="static/js/AnimOnScroll.js"></script>
+    <script>
+    new AnimOnScroll(document.getElementById("grid"), {
+  minDuration: 0.4,
+  maxDuration: 0.7,
+  viewportFactor: 0.2
+});
+</script>
+    <script>
+    $(document).ready(function() {
+  $("#slippry-slider").slippry(
+    (defaults = {
+      transition: "vertical",
+      useCSS: true,
+      speed: 5000,
+      pause: 3000,
+      initSingle: false,
+      auto: true,
+      preload: "visible",
+      pager: false
+    })
+  );
+});
+</script>
+
+    <script src="static/js/custom.js"></script>
+    <script src="static/js/contactform.js"></script>
+
+  </body>
+
+</html>
