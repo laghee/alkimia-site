@@ -8,13 +8,20 @@
     <meta name="description" content="" />
     <meta name="author" content="KAMA srl" />
     <!-- styles -->
-    <link rel="stylesheet" href="static/css/fancybox/jquery.fancybox.css">
-    <link href="static/css/bootstrap.css" rel="stylesheet" />
-    <link href="static/css/bootstrap-theme.css" rel="stylesheet" />
-    <link rel="stylesheet" href="static/css/slippry.css">
-    <link href="static/css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="static/color/default.css">
-    <script src="static/js/modernizr.custom.js"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/fancybox/jquery.fancybox.css') }}"/>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.css') }}"/>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap-theme.css') }}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/slippry.css') }}"/>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}"/>
+    <link rel="stylesheet" href="{{url_for('static', filename='color/default.css') }}"/>
+
+    <!--<link rel="stylesheet" href="assets/css/fancybox/jquery.fancybox.css"/>-->
+    <!--<link rel="stylesheet" href="assets/css/bootstrap.css" />-->
+    <!--<link rel="stylesheet" href="assets/css/bootstrap-theme.css"/>-->
+    <!--<link rel="stylesheet" href="assets/css/slippry.css"/>-->
+    <!--<link rel="stylesheet" href="assets/css/style.css"/>-->
+    <!--<link rel="stylesheet" href="assets/color/default.css"/>-->
+    <script src="{{url_for('static', filename='js/modernizr.custom.js') }}"></script>
   </head>
 
   <body>
@@ -57,13 +64,13 @@
     <section id="intro">
       <ul id="slippry-slider">
         <li>
-          <a href="#slide1"><img src="{{ url_for('static', filename='patioGiorno.jpg') }}" alt="Benvenuti..."></a>
+          <a href="#slide1"><img src="{{ url_for('static', filename='img/patioGiorno.jpg') }}" alt="Benvenuti..."></a>
         </li>
         <li>
-          <a href="#slide2"><img src="{{ url_for('static', filename='sala_da_bar.jpg') }}" alt="Accomodatevi..."></a>
+          <a href="#slide2"><img src="{{ url_for('static', filename='img/sala_da_bar.jpg') }}" alt="Accomodatevi..."></a>
         </li>
         <li>
-          <a href="#slide3"><img src="{{ url_for('static', filename='agnello.jpg') }}" alt="Buon appetito..."></a>
+          <a href="#slide3"><img src="{{ url_for('static', filename='img/agnello.jpg') }}" alt="Buon appetito..."></a>
         </li>
       </ul>
     </section>
@@ -78,7 +85,7 @@
             </div>
             <div class="sub-heading">
               <p>
-                <a href="{{ url_for('static', filename='menu.pdf') }}" download="menu_alkima_inverno" class="btn btn-lg btn-theme">Scaricare il nostro menù invernale.</a>
+                <a href="{{ url_for('static', filename='img/menu.pdf') }}" download="menu_alkima_inverno" class="btn btn-lg btn-theme">Scaricare il nostro menù invernale.</a>
               </p>
             </div>
           </div>
@@ -99,42 +106,42 @@
         <div class="row">
           <div class="col-md-12">
             <ul class="grid effect" id="grid">
-              <li><a href="{{ url_for('static', filename='sala_da_bar.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='sala_da_bar.jpg') }}" alt="Sala Interna" /></a></li>
-              <li><a href="{{ url_for('static', filename='sala_verso_retro.jpeg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='sala_verso_retro.jpeg') }}" alt="Sala Verso Cucina" /></a></li>
-              <li><a href="{{ url_for('static', filename='sala_verso_lago.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='sala_verso_lago.jpg') }}" alt="Sala Verso Lago" /></a></li>
-              <li><a href="{{ url_for('static', filename='SeraMagica.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='SeraMagica.jpg') }}" alt="Magia Estiva" /></a></li>
-              <li><a href="{{ url_for('static', filename='sandwichBoard.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='sandwichBoard.jpg') }}" alt="Lavagna a Mezzogiorno" /></a></li>
-              <li><a href="{{ url_for('static', filename='patioGiorno.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='patioGiorno.jpg') }}" alt="Pranzo sul Lago" /></a></li>
-              <li><a href="{{ url_for('static', filename='agnello.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='agnello.jpg') }}" alt="Carré d'Agnello" /></a></li>
-              <li><a href="{{ url_for('static', filename='tagliatelle_piccione_quad.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='tagliatelle_piccione_quad.jpg') }}" alt="Tagliatelle Piccione" /></a></li>
-              <li><a href="{{ url_for('static', filename='sfogliaCarciofi.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='sfogliaCarciofi.jpg') }}" alt="Sfoglia con Carciofi" /></a></li>
-              <li><a href="{{ url_for('static', filename='salmone.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='salmone.jpg') }}" alt="Filetto di Salmone" /></a></li>
-              <li><a href="{{ url_for('static', filename='cappesante.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='cappesante.jpg') }}" alt="Cappesante con Lardo" /></a></li>
-              <li><a href="{{ url_for('static', filename='tartare_salmone.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='tartare_salmone.jpg') }}" alt="Tartare di Salmone" /></a></li>
-              <li><a  href="{{ url_for('static', filename='storione.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name">
-                <img src="{{ url_for('static', filename='storione.jpg') }}" alt="Trancio di Storione" /></a></li>
-              <li><a href="{{ url_for('static', filename='crostatina.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='crostatina.jpg') }}" alt="Crostatina di Frutta" /></a></li>
-              <li><a href="{{ url_for('static', filename='sabbiosa.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='sabbiosa.jpg') }}" alt="Torta Sabbiosa" /></a></li>
-              <li><a href="{{ url_for('static', filename='tortaGianduia.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='tortaGianduia.jpg') }}" alt="Torta Gianduia" /></a></li>
-              <li><a href="{{ url_for('static', filename='cuoriDolci.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='cuoriDolci.jpg') }}" alt="Biscotti" /></a></li>
-              <li><a href="{{ url_for('static', filename='Noi_crop.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='Noi_crop.jpg') }}" alt="Alessio e Kate" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/sala_da_bar.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='img/sala_da_bar.jpg') }}" alt="Sala Interna" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/sala_verso_retro.jpeg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='img/sala_verso_retro.jpeg') }}" alt="Sala Verso Cucina" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/sala_verso_lago.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='img/sala_verso_lago.jpg') }}" alt="Sala Verso Lago" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/SeraMagica.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='img/SeraMagica.jpg') }}" alt="Magia Estiva" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/sandwichBoard.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='img/sandwichBoard.jpg') }}" alt="Lavagna a Mezzogiorno" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/patioGiorno.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='img/patioGiorno.jpg') }}" alt="Pranzo sul Lago" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/agnello.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='img/agnello.jpg') }}" alt="Carré d'Agnello" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/tagliatelle_piccione_quad.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='img/tagliatelle_piccione_quad.jpg') }}" alt="Tagliatelle Piccione" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/sfogliaCarciofi.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='img/sfogliaCarciofi.jpg') }}" alt="Sfoglia con Carciofi" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/salmone.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='img/salmone.jpg') }}" alt="Filetto di Salmone" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/cappesante.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='img/cappesante.jpg') }}" alt="Cappesante con Lardo" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/tartare_salmone.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='img/tartare_salmone.jpg') }}" alt="Tartare di Salmone" /></a></li>
+              <li><a  href="{{ url_for('static', filename='img/storione.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name">
+                <img src="{{ url_for('static', filename='img/storione.jpg') }}" alt="Trancio di Storione" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/crostatina.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='img/crostatina.jpg') }}" alt="Crostatina di Frutta" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/sabbiosa.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='img/sabbiosa.jpg') }}" alt="Torta Sabbiosa" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/tortaGianduia.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='img/tortaGianduia.jpg') }}" alt="Torta Gianduia" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/cuoriDolci.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='img/cuoriDolci.jpg') }}" alt="Biscotti" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/Noi_crop.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                  src="{{ url_for('static', filename='img/Noi_crop.jpg') }}" alt="Alessio e Kate" /></a></li>
               <!--  <li><a href="static/img/portfolio/12.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
                   src="static/img/portfolio/12.jpg" alt="" /></a></li>
               <li><a href="static/img/portfolio/13.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
@@ -227,7 +234,7 @@
             <div class="col-md-12">
               <div class="aligncenter">
                 <p>
-                  &copy; Ristorante Alkimia di KAMA srl
+                  &copy; {{ now.year }} Ristorante Alkimia di KAMA srl
                 </p>
 
               </div>
@@ -238,20 +245,20 @@
     </footer>
     <a href="#" class="scrollup"><i class="fa fa-angle-up fa-2x"></i></a>
     <!-- javascript -->
-    <script src="static/js/jquery-1.9.1.min.js"></script>
-    <script src="static/js/jquery.easing.js"></script>
-    <script src="static/js/classie.js"></script>
-    <script src="static/js/bootstrap.js"></script>
-    <script src="static/js/slippry.min.js"></script>
-    <script src="static/js/nagging-menu.js"></script>
-    <script src="static/js/jquery.nav.js"></script>
-    <script src="static/js/jquery.scrollTo.js"></script>
-    <script src="static/js/jquery.fancybox.pack.js"></script>
-    <script src="static/js/jquery.fancybox-media.js"></script>
-    <script src="static/js/masonry.pkgd.min.js"></script>
-    <script src="static/js/imagesloaded.js"></script>
-    <script src="static/js/jquery.nicescroll.min.js"></script>
-    <script src="static/js/AnimOnScroll.js"></script>
+    <script src="{{ url_for('static', filename='js/jquery-1.9.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.easing.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/classie.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/slippry.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/nagging-menu.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.nav.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.scrollTo.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.fancybox.pack.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.fancybox-media.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/masonry.pkgd.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/imagesloaded.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.nicescroll.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/AnimOnScroll.js') }}"></script>
     <script>
     new AnimOnScroll(document.getElementById("grid"), {
   minDuration: 0.4,
@@ -276,8 +283,8 @@
 });
 </script>
 
-    <script src="static/js/custom.js"></script>
-    <script src="static/js/contactform.js"></script>
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/contactform.js') }}"></script>
 
   </body>
 
