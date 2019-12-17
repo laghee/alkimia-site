@@ -1,8 +1,8 @@
 $(function(){
-	
+
 	var menu = $('#navigation'),
 		pos = menu.offset();
-		
+
 		$(window).scroll(function(){
 			if($(this).scrollTop() > pos.top+menu.height() && menu.hasClass('default')){
 				menu.fadeOut('fast', function(){

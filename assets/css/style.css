@@ -282,14 +282,14 @@ header {
 .navbar-nav>li>a {
   padding-top: 0;
   padding-bottom: 0;
-  line-height: 1em;
+  line-height: 2em;
 }
 
 .navbar .nav>li>a,
 .navbar .nav>li>a:visited {
   padding: 28px 13px 27px;
   font-family: "Montserrat", sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
   color: #fff;
@@ -434,7 +434,7 @@ ul.social-profile li a:hover {
   margin: 0;
 
   text-align: center;
-  color: #333;
+  color: #616161;
 }
 
 /* ==== divider ==== */
@@ -953,6 +953,7 @@ div.cform-response-output {
 
 .btn.btn-theme {
   color: #fff;
+  margin: 5px;
 }
 
 .validation {
@@ -1003,7 +1004,7 @@ div.cform-response-output {
 footer {
   float: left;
   width: 100%;
-  background: #212121;
+  background: #373737;
   color: #fff;
   margin: 0;
   padding: 40px 0 0 0;
@@ -1061,8 +1062,12 @@ ul.social-network li {
   background-color: #bd3518;
 }
 
-.social-network a.icoVimeo:hover {
-  background-color: #0590b8;
+.social-network a.icoTripAdvisor:hover {
+  background-color: #00af87;
+}
+
+.social-network a.icoInstagram:hover {
+  background-color: #c13584;
 }
 
 .social-network a.icoLinkedin:hover {
@@ -1073,7 +1078,8 @@ ul.social-network li {
 .social-network a.icoFacebook:hover i,
 .social-network a.icoTwitter:hover i,
 .social-network a.icoGoogle:hover i,
-.social-network a.icoVimeo:hover i,
+.social-network a.icoTripAdvisor:hover i,
+.social-network a.icoInstagram:hover i,
 .social-network a.icoLinkedin:hover i {
   color: #fff;
 }

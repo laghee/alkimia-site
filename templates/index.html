@@ -40,9 +40,9 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <nav>
                 <ul class="nav navbar-nav navbar-right" margin-top="0px">
-                  <li class="current"><a href="#intro"><i class="fa fa-home" aria-hidden="false"></i></a></li>
-                  <li><a href="#menu">I Menù</a></li>
-                  <li><a href="#foto">Galleria</a></li>
+                  <li class="current"><a href="#intro"><i class="fa fa-home fa-2x" aria-hidden="false"></i></a></li>
+                  <li><a href="#menu">Menù</a></li>
+                  <li><a href="#foto">Foto</a></li>
                   <li><a href="#contact">Contatto</a></li>
                 </ul>
               </nav>
@@ -58,13 +58,13 @@
     <section id="intro">
       <ul id="slippry-slider">
         <li>
-          <a href="#slide1"><img src="{{ url_for('static', filename='img/patioGiorno.jpg') }}" alt="Benvenuti..."></a>
+          <a href="#slide1"><img src="{{ url_for('static', filename='img/slide1_lampade_fuori.jpeg') }}" alt="Benvenuti..."></a>
         </li>
         <li>
-          <a href="#slide2"><img src="{{ url_for('static', filename='img/sala_da_bar.jpg') }}" alt="Accomodatevi..."></a>
+          <a href="#slide2"><img src="{{ url_for('static', filename='img/slide2_sala.jpg') }}" alt="Accomodatevi..."></a>
         </li>
         <li>
-          <a href="#slide3"><img src="{{ url_for('static', filename='img/agnello.jpg') }}" alt="Buon appetito..."></a>
+          <a href="#slide3"><img src="{{ url_for('static', filename='img/slide3_salmone.jpg') }}" alt="Buon appetito..."></a>
         </li>
       </ul>
     </section>
@@ -172,39 +172,14 @@
       <div class="row">
         <div class="col-md-6">
           <h4><i class="icon-envelope"></i><strong>Contattaci</strong></h4>
-          <!-- start contact form -->
-          <div class="cform" id="contact-form">
-
-            <div id="sendmessage">Il suo messaggio è stato inviato. Grazie!</div>
-            <div id="errormessage">C'è stato un problema con il suo messaggio. La preghiamo di riprovare.</div>
-            <form action="" method="post" role="form" class="contactForm">
-              <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Nome" data-rule="minlen:4" data-msg="Il nome deve avere almeno 4 caratteri.">
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Per favore, inserire un indirizzo email valido.">
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Oggetto -- RICHIESTA PRENOTAZIONE oppure COLLABORAZIONE" data-rule="minlen:8" data-msg="Per favore, inserire almeno 8 caratteri per l'oggetto.">
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" placeholder="Messaggio" data-rule="required" data-msg="Aggiungere il testo del tuo messaggio."></textarea>
-                <div class="validation"></div>
-              </div>
-
-              <div class="text-center"><button type="submit" class="btn btn-lg btn-theme">Invia</button></div>
-            </form>
-          </div>
-          <!-- END contact form -->
+            <a href="https://form.jotformeu.com/92904979708374" class="btn btn-lg btn-theme">Prenotare / Request Booking</a>
+            <a href="https://form.jotformeu.com/193462964186369" class="btn btn-lg btn-theme">Collaborare con Noi / Work with Us</a>
         </div>
         <div class="col-md-6">
           <h4><i class="icon-envelope"></i><strong>Dove siamo</strong></h4>
           <!-- map -->
           <div id="section-map" class="clearfix">
-            <iframe width="600" height="400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ6-r_MUcXhEcROfX2hjJS9P8&key=AIzaSyCzkPDdlsDP1RUWiQYvZP0BTCjPgOm_Wrw" allowfullscreen></iframe>
+            <iframe width="100%" height="400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ6-r_MUcXhEcROfX2hjJS9P8&key=AIzaSyCzkPDdlsDP1RUWiQYvZP0BTCjPgOm_Wrw" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -219,11 +194,11 @@
             <div class="col-md-12">
               <div class="aligncenter">
                 <ul class="social-network social-circle">
-                  <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                  <li><a href="https://www.facebook.com/pages/Ristorante-Alkimia/265411460818939" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
                   <li><a href="https://www.instagram.com/alkimia_bellano" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
                   <li><a href="https://twitter.com/alkimia_bellano" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
                   <li><a href="https://www.google.com/maps/place/Ristorante+Alkimia/@46.0427189,9.2997591,15z/data=!4m5!3m4!1s0x0:0xfff4523286f6f539!8m2!3d46.0427189!4d9.2997591" class="icoGoogle" title="Google"><i class="fa fa-google-plus"></i></a></li>
-                  <li><a href="https://www.tripadvisor.com/Restaurant_Review-g664176-d15669635-Reviews-Ristorante_Alkimia-Bellano_Lake_Como_Lombardy.html" title="TripAdvisor"><i class="fa fa-tripadvisor"></i></a></li>
+                  <li><a href="https://www.tripadvisor.com/Restaurant_Review-g664176-d15669635-Reviews-Ristorante_Alkimia-Bellano_Lake_Como_Lombardy.html" class="icoTripAdvisor" title="TripAdvisor"><i class="fa fa-tripadvisor"></i></a></li>
                 </ul>
               </div>
             </div>
@@ -234,7 +209,10 @@
                 <p>
                   &copy; {{ now.year }} Ristorante Alkimia di KAMA srl
                 </p>
-
+                <p>Piazza Giuseppe Verdi 7</p>
+                <p>23822 Bellano LC</p>
+                <p><i class="fa fa-phone"></i>&nbsp;:&nbsp;&nbsp;0341 1691212</p>
+                <p>English&nbsp;<i class="fa fa-phone"></i>&nbsp;:&nbsp;&nbsp;349 60 64 667</p>
               </div>
             </div>
           </div>
@@ -268,7 +246,9 @@
     $(document).ready(function() {
   $("#slippry-slider").slippry(
     (defaults = {
-      transition: "vertical",
+      adaptiveHeight: false,
+      transition: "kenburns",
+      kenZoom: 100,
       useCSS: true,
       speed: 5000,
       pause: 3000,
@@ -281,8 +261,25 @@
 });
 </script>
 
+
+    <!-- <script src="https://form.jotformeu.com/static/feedback2.js" type="text/javascript">
+      new JotformFeedback({
+        formId: "92904979708374",
+        buttonText: "PRENOTARE UN TAVOLO / BOOKING REQUEST",
+        base: "https://form.jotformeu.com/",
+        background: "#550026",
+        fontColor: "#FFFFFF",
+        buttonSide: "left",
+        buttonAlign: "bottom",
+        type: 1,
+        width: 700,
+        height: 500,
+        isCardForm: false
+      });
+    </script> -->
+
     <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/contactform.js') }}"></script>
+    <!--<script src="{{ url_for('static', filename='js/contactform.js') }}"></script>-->
 
   </body>
 

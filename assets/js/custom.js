@@ -18,7 +18,6 @@
   });
 
   $('.accordion').on('show', function (e) {
-
     $(e.target).prev('.accordion-heading').find('.accordion-toggle').addClass('active');
     $(e.target).prev('.accordion-heading').find('.accordion-toggle i').removeClass('icon-plus');
     $(e.target).prev('.accordion-heading').find('.accordion-toggle i').addClass('icon-minus');
@@ -31,7 +30,7 @@
   });
 
 
-  //navigation
+//   navigation
   $('.navigation').onePageNav({
     begin: function () {
       console.log('start');
