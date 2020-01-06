@@ -10,7 +10,7 @@
 @import url("https://fonts.googleapis.com/css?family=Alice|Montserrat:300");
 /* === fontawesome === */
 
-@import url("font-awesome.css");
+@import url("all-fontawesome.css");
 /* === custom icon === */
 
 @import url("custom-fonts.css");
@@ -466,7 +466,7 @@ ul.social-profile li a:hover {
   text-align: center;
 }
 
-.scrollup i {
+.scrollup svg {
   margin-top: 7px;
   color: #fff;
 }
@@ -482,7 +482,7 @@ a.scrollup:focus {
   text-decoration: none;
 }
 
-a.scrollup i:hover {
+a.scrollup svg:hover {
   text-decoration: none;
 }
 
@@ -1046,10 +1046,6 @@ ul.social-network li {
   margin: 0 5px;
 }
 
-.social-network a.icoRss:hover {
-  background-color: #f56505;
-}
-
 .social-network a.icoFacebook:hover {
   background-color: #3b5998;
 }
@@ -1070,18 +1066,27 @@ ul.social-network li {
   background-color: #c13584;
 }
 
-.social-network a.icoLinkedin:hover {
-  background-color: #007bb7;
+.social-network a.icoWhatsapp:hover {
+  background-color: #00e676;
 }
 
-.social-network a.icoRss:hover i,
-.social-network a.icoFacebook:hover i,
-.social-network a.icoTwitter:hover i,
-.social-network a.icoGoogle:hover i,
-.social-network a.icoTripAdvisor:hover i,
-.social-network a.icoInstagram:hover i,
-.social-network a.icoLinkedin:hover i {
+.social-network a.icoFacebook:hover svg,
+.social-network a.icoTwitter:hover svg,
+.social-network a.icoGoogle:hover svg,
+.social-network a.icoTripAdvisor:hover svg,
+.social-network a.icoWhatsapp:hover svg,
+.social-network a.icoInstagram:hover svg {
   color: #fff;
+}
+
+.social-network a.icoFacebook svg,
+.social-network a.icoTwitter svg,
+.social-network a.icoGoogle svg,
+.social-network a.icoTripAdvisor svg,
+.social-network a.icoWhatsapp svg,
+.social-network a.icoInstagram svg {
+  text-align: center;
+  margin: auto;
 }
 
 a.socialIcon:hover,
@@ -1102,13 +1107,14 @@ a.socialIcon:hover,
   font-size: 20px;
 }
 
-.social-circle li i {
+.social-circle li svg {
   margin: 0;
   line-height: 50px;
   text-align: center;
+  vertical-align: center;
 }
 
-.social-circle li a:hover i,
+.social-circle li a:hover svg,
 .triggeredHover {
   -moz-transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
@@ -1121,7 +1127,7 @@ a.socialIcon:hover,
   transition: all 0.2s;
 }
 
-.social-circle i {
+.social-circle svg {
   color: #fff;
   -webkit-transition: all 0.8s;
   -moz-transition: all 0.8s;

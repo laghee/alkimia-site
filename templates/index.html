@@ -9,12 +9,14 @@
     <meta name="author" content="KAMA srl" />
     <!-- styles -->
     <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/all-fontawesome.css') }}">
     <link rel="stylesheet" href="{{url_for('static', filename='css/fancybox/jquery.fancybox.css') }}"/>
     <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.css') }}"/>
     <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap-theme.css') }}" />
     <link rel="stylesheet" href="{{url_for('static', filename='css/slippry.css') }}"/>
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}"/>
     <link rel="stylesheet" href="{{url_for('static', filename='color/default.css') }}"/>
+    <script defer src="{{url_for('static', filename='js/all-fontawesome.js') }}"></script>
     <script src="{{url_for('static', filename='js/modernizr.custom.js') }}"></script>
   </head>
 
@@ -40,7 +42,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <nav>
                 <ul class="nav navbar-nav navbar-right" margin-top="0px">
-                  <li class="current"><a href="#intro"><i class="fa fa-home fa-2x" aria-hidden="false"></i></a></li>
+                  <li class="current"><a href="#intro"><i class="fas fa-home fa-2x" aria-hidden="false"></i></a></li>
                   <li><a href="#menu">Menù</a></li>
                   <li><a href="#foto">Foto</a></li>
                   <li><a href="#contact">Contatto</a></li>
@@ -58,7 +60,7 @@
     <section id="intro">
       <ul id="slippry-slider">
         <li>
-          <a href="#slide1"><img src="{{ url_for('static', filename='img/slide1_lampade_fuori.jpeg') }}" alt="Benvenuti..."></a>
+          <a href="#slide1"><img src="{{ url_for('static', filename='img/slide1_estate.jpeg') }}" alt="Benvenuti..."></a>
         </li>
         <li>
           <a href="#slide2"><img src="{{ url_for('static', filename='img/slide2_sala.jpg') }}" alt="Accomodatevi..."></a>
@@ -79,10 +81,9 @@
             </div>
             <div class="sub-heading">
               <p>
-                <a href="{{ url_for('static', filename='img/menu.pdf') }}" download="menu_alkima_inverno" class="btn btn-lg btn-theme">Menù Invernale</a>
+                <a href="{{ url_for('static', filename='img/menu.pdf') }}" download="menu_alkima_inverno" class="btn btn-lg btn-theme">Menù Invernale / Winter Menu</a>
                 <!-- <a href="{{ url_for('static', filename='img/proposta_pranzo.pdf') }}" download="menu_pranzo_feriale" class="btn btn-lg btn-theme">Pranzo Feriale</a> -->
-                <a href="{{ url_for('static', filename='img/menu_natale2019.pdf') }}" download="pranzo_natale" class="btn btn-lg btn-theme">Pranzo di Natale</a>
-                <a href="{{ url_for('static', filename='img/Feste_da_Asporto.pdf') }}" download="menu_da_asporto" class="btn btn-lg btn-theme">Feste da Asporto</a>
+                <!--<a href="{{ url_for('static', filename='img/Menu_PesaVegia_2020.pdf') }}" download="menu_da_asporto" class="btn btn-lg btn-theme">Pesa Vegia 2020</a>-->
               </p>
             </div>
           </div>
@@ -103,48 +104,60 @@
         <div class="row">
           <div class="col-md-12">
             <ul class="grid effect" id="grid">
-              <li><a href="{{ url_for('static', filename='img/sala_da_bar.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='img/sala_da_bar.jpg') }}" alt="Sala Interna" /></a></li>
-              <li><a href="{{ url_for('static', filename='img/sala_verso_retro.jpeg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='img/sala_verso_retro.jpeg') }}" alt="Sala Verso Cucina" /></a></li>
-              <li><a href="{{ url_for('static', filename='img/sala_verso_lago.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='img/sala_verso_lago.jpg') }}" alt="Sala Verso Lago" /></a></li>
-              <li><a href="{{ url_for('static', filename='img/SeraMagica.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='img/SeraMagica.jpg') }}" alt="Magia Estiva" /></a></li>
-              <li><a href="{{ url_for('static', filename='img/sandwichBoard.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='img/sandwichBoard.jpg') }}" alt="Lavagna a Mezzogiorno" /></a></li>
-              <li><a href="{{ url_for('static', filename='img/patioGiorno.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='img/patioGiorno.jpg') }}" alt="Pranzo sul Lago" /></a></li>
-              <li><a href="{{ url_for('static', filename='img/agnello.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='img/agnello.jpg') }}" alt="Carré d'Agnello" /></a></li>
-              <li><a href="{{ url_for('static', filename='img/tagliatelle_piccione_quad.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='img/tagliatelle_piccione_quad.jpg') }}" alt="Tagliatelle Piccione" /></a></li>
-              <li><a href="{{ url_for('static', filename='img/sfogliaCarciofi.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='img/sfogliaCarciofi.jpg') }}" alt="Sfoglia con Carciofi" /></a></li>
-              <li><a href="{{ url_for('static', filename='img/salmone.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='img/salmone.jpg') }}" alt="Filetto di Salmone" /></a></li>
-              <li><a href="{{ url_for('static', filename='img/cappesante.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='img/cappesante.jpg') }}" alt="Cappesante con Lardo" /></a></li>
-              <li><a href="{{ url_for('static', filename='img/tartare_salmone.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='img/tartare_salmone.jpg') }}" alt="Tartare di Salmone" /></a></li>
-              <li><a  href="{{ url_for('static', filename='img/storione.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name">
-                <img src="{{ url_for('static', filename='img/storione.jpg') }}" alt="Trancio di Storione" /></a></li>
-              <li><a href="{{ url_for('static', filename='img/crostatina.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='img/crostatina.jpg') }}" alt="Crostatina di Frutta" /></a></li>
-              <li><a href="{{ url_for('static', filename='img/sabbiosa.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='img/sabbiosa.jpg') }}" alt="Torta Sabbiosa" /></a></li>
-              <li><a href="{{ url_for('static', filename='img/tortaGianduia.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='img/tortaGianduia.jpg') }}" alt="Torta Gianduia" /></a></li>
-              <li><a href="{{ url_for('static', filename='img/cuoriDolci.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='img/cuoriDolci.jpg') }}" alt="Biscotti" /></a></li>
-              <li><a href="{{ url_for('static', filename='img/Noi_crop.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="{{ url_for('static', filename='img/Noi_crop.jpg') }}" alt="Alessio e Kate" /></a></li>
-              <!--  <li><a href="static/img/portfolio/12.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="static/img/portfolio/12.jpg" alt="" /></a></li>
-              <li><a href="static/img/portfolio/13.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="static/img/portfolio/13.jpg" alt="" /></a></li>
-              <li><a href="static/img/portfolio/14.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
-                  src="static/img/portfolio/14.jpg" alt="" /></a></li> -->
+              <li><a href="{{ url_for('static', filename='img/sala_da_bar.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Sala Interna Accogliente"><img
+                  src="{{ url_for('static', filename='img/sala_da_bar.jpg') }}" alt="" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/sala_verso_retro.jpeg') }}" class="fancybox" data-fancybox-group="gallery" title="Sala Interna Accogliente"><img
+                  src="{{ url_for('static', filename='img/sala_verso_retro.jpeg') }}" alt="" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/sala_verso_lago.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Sala Interna Accogliente"><img
+                  src="{{ url_for('static', filename='img/sala_verso_lago.jpg') }}" alt="" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/SeraMagica.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Serate Estive Magiche"><img
+                  src="{{ url_for('static', filename='img/SeraMagica.jpg') }}" alt="" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/sandwichBoard.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Lavagna a Mezzogiorno"><img
+                  src="{{ url_for('static', filename='img/sandwichBoard.jpg') }}" alt="" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/patio.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Pranzo sul Lago"><img
+                  src="{{ url_for('static', filename='img/patio.jpg') }}" alt="" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/patio2.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Pranzo sul Lago"><img
+                  src="{{ url_for('static', filename='img/patio2.jpg') }}" alt="" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/anguilla.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Anguilla Marinata"><img
+                  src="{{ url_for('static', filename='img/anguilla.jpg') }}" alt="" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/tartare_salmone.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Tartare di Salmone"><img
+                  src="{{ url_for('static', filename='img/tartare_salmone.jpg') }}" alt="" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/pesci_affumicati.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Pesci Affumicati"><img
+                  src="{{ url_for('static', filename='img/pesci_affumicati.jpg') }}" alt="" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/salmone.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Filetto di Salmone"><img
+                  src="{{ url_for('static', filename='img/salmone.jpg') }}" alt="" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/risotto_astice.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Risotto all'Astice"><img
+                  src="{{ url_for('static', filename='img/risotto_astice.jpg') }}" alt="" /></a></li>
+              <!-- <li><a href="{{ url_for('static', filename='img/cappesante.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Cappesante con Lardo"><img
+                  src="{{ url_for('static', filename='img/cappesante.jpg') }}" alt="" /></a></li> -->
+              <li><a  href="{{ url_for('static', filename='img/storione.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Trancio di Storione"><img
+                  src="{{ url_for('static', filename='img/storione.jpg') }}" alt="" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/ragu_lago.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Tagliatelle al Ragù Lago"><img
+                  src="{{ url_for('static', filename='img/ragu_lago.jpg') }}" alt="" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/cappesante_estivo.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Cappesante con Crema ai Peperoni"><img
+                  src="{{ url_for('static', filename='img/cappesante_estivo.jpg') }}" alt="" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/agnello.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Carré d'Agnello"><img
+                  src="{{ url_for('static', filename='img/agnello.jpg') }}" alt="" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/tagliatelle_piccione_quad.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Tagliatelle al Piccione"><img
+                  src="{{ url_for('static', filename='img/tagliatelle_piccione_quad.jpg') }}" alt="" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/sfogliaCarciofi.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Sfoglia con Carciofi"><img
+                  src="{{ url_for('static', filename='img/sfogliaCarciofi.jpg') }}" alt="" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/vitello_tonnato.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Vitello Tonnato"><img
+                  src="{{ url_for('static', filename='img/vitello_tonnato.jpg') }}" alt="" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/crostatina.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Crostatina di Frutta"><img
+                  src="{{ url_for('static', filename='img/crostatina.jpg') }}" alt="" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/sabbiosa.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Torta Sabbiosa"><img
+                  src="{{ url_for('static', filename='img/sabbiosa.jpg') }}" alt="" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/tortaGianduia.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Torta Gianduia"><img
+                  src="{{ url_for('static', filename='img/tortaGianduia.jpg') }}" alt="" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/chef_nera.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Chef Alessio Allodio"><img
+                  src="{{ url_for('static', filename='img/chef_nera.jpg') }}" alt="" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/cuoriDolci.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Biscotti d'Amore"><img
+                  src="{{ url_for('static', filename='img/cuoriDolci.jpg') }}" alt="" /></a></li>
+              <li><a href="{{ url_for('static', filename='img/torta_cuore.jpeg') }}" class="fancybox" data-fancybox-group="gallery" title="Torta Anniversario"><img
+                  src="{{ url_for('static', filename='img/torta_cuore.jpeg') }}" alt="" /></a></li>
+              <!-- <li><a href="{{ url_for('static', filename='img/Noi_crop.jpg') }}" class="fancybox" data-fancybox-group="gallery" title="Alessio e Kate"><img
+                  src="{{ url_for('static', filename='img/Noi_crop.jpg') }}" alt="" /></a></li> -->
             </ul>
           </div>
         </div>
@@ -157,12 +170,12 @@
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
           <div class="heading">
-            <h3><span>Get in touch</span></h3>
+            <h3><span>Contatto</span></h3>
           </div>
           <div class="sub-heading">
-            <p>
+            <!-- <p>
               Lorem ipsum dolor sit amet, mutat paulo simul per no, assum fastidii vituperata eam no.
-            </p>
+            </p> -->
           </div>
         </div>
       </div>
@@ -171,12 +184,17 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h4><i class="icon-envelope"></i><strong>Contattaci</strong></h4>
-            <a href="https://form.jotformeu.com/92904979708374" class="btn btn-lg btn-theme">Prenotare / Request Booking</a>
-            <a href="https://form.jotformeu.com/193462964186369" class="btn btn-lg btn-theme">Collaborare con Noi / Work with Us</a>
+          <h4><strong>12.00-14.00 | 19.30-22.00</strong></h4>
+          <h4><strong>chiuso Martedì sera e Mercoledì</strong></h4>
+          <h4>(closed Tuesday night & Wednesday)</h4>
+          <a href="https://form.jotformeu.com/92904979708374" class="btn btn-lg btn-theme">Prenotare / Request Booking</a>
+          &nbsp;
+          <h4><i class="fas fa-phone-alt"></i>&nbsp;(fisso):&nbsp;&nbsp;<a href="tel:+3903411691212">0341 1691212</a></h4>
+          <h4><i class="fas fa-phone-alt"></i>&nbsp;(SMS/English):&nbsp;&nbsp;<a href="tel:+393496064667">349 60 64 667</h4>
+          <a href="https://form.jotformeu.com/193462964186369" class="btn btn-lg btn-theme">Collaborare con Noi</a>
         </div>
         <div class="col-md-6">
-          <h4><i class="icon-envelope"></i><strong>Dove siamo</strong></h4>
+          <!--<h4><i class="icon-envelope"></i><strong>Dove siamo</strong></h4>-->
           <!-- map -->
           <div id="section-map" class="clearfix">
             <iframe width="100%" height="400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ6-r_MUcXhEcROfX2hjJS9P8&key=AIzaSyCzkPDdlsDP1RUWiQYvZP0BTCjPgOm_Wrw" allowfullscreen></iframe>
@@ -194,11 +212,12 @@
             <div class="col-md-12">
               <div class="aligncenter">
                 <ul class="social-network social-circle">
-                  <li><a href="https://www.facebook.com/pages/Ristorante-Alkimia/265411460818939" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="https://www.instagram.com/alkimia_bellano" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-                  <li><a href="https://twitter.com/alkimia_bellano" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="https://www.google.com/maps/place/Ristorante+Alkimia/@46.0427189,9.2997591,15z/data=!4m5!3m4!1s0x0:0xfff4523286f6f539!8m2!3d46.0427189!4d9.2997591" class="icoGoogle" title="Google"><i class="fa fa-google-plus"></i></a></li>
-                  <li><a href="https://www.tripadvisor.com/Restaurant_Review-g664176-d15669635-Reviews-Ristorante_Alkimia-Bellano_Lake_Como_Lombardy.html" class="icoTripAdvisor" title="TripAdvisor"><i class="fa fa-tripadvisor"></i></a></li>
+                  <li><a href="whatsapp://send?phone=+393496064667&abid=+393496064667" class="icoWhatsapp" title="WhatsApp"><i class="fab fa-whatsapp fa-lg"></i></a></li>
+                  <li><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/alkimia.bellano" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+                  <li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/alkimia_bellano" class="icoInstagram" title="Instagram"><i class="fab fa-instagram fa-lg"></i></a></li>
+                  <li><a target="_blank" rel="noopener noreferrer" href="https://www.tripadvisor.com/Restaurant_Review-g664176-d15669635-Reviews-Ristorante_Alkimia-Bellano_Lake_Como_Lombardy.html" class="icoTripAdvisor" title="TripAdvisor"><i class="fab fa-tripadvisor fa-lg"></i></a></li>
+                  <li><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Ristorante+Alkimia/@46.0427189,9.2997591,15z/data=!4m5!3m4!1s0x0:0xfff4523286f6f539!8m2!3d46.0427189!4d9.2997591" class="icoGoogle" title="Google"><i class="fab fa-google fa-lg"></i></a></li>
+                  <!--<li><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/alkimia_bellano" class="icoTwitter" title="Twitter"><i class="fab fa-twitter fa-lg"></i></a></li>-->
                 </ul>
               </div>
             </div>
@@ -206,20 +225,19 @@
           <div class="row">
             <div class="col-md-12">
               <div class="aligncenter">
-                <p>
-                  &copy; {{ now.year }} Ristorante Alkimia di KAMA srl
-                </p>
+                <p>&copy; {{ now.year }} Ristorante Alkimia di KAMA srl</p>
                 <p>Piazza Giuseppe Verdi 7</p>
                 <p>23822 Bellano LC</p>
-                <p><i class="fa fa-phone"></i>&nbsp;:&nbsp;&nbsp;0341 1691212</p>
-                <p>English&nbsp;<i class="fa fa-phone"></i>&nbsp;:&nbsp;&nbsp;349 60 64 667</p>
+                <p>PI 03790610137</p>
+                <!--<p><i class="fas fa-phone-alt"></i>&nbsp;:&nbsp;&nbsp;+39 0341 1691212</p>-->
+                <!--<p>English&nbsp;<i class="fas fa-phone-alt"></i>&nbsp;:&nbsp;&nbsp;+39 349 60 64 667</p>-->
               </div>
             </div>
           </div>
         </div>
       </div>
     </footer>
-    <a href="#" class="scrollup"><i class="fa fa-angle-up fa-2x"></i></a>
+    <a href="#" class="scrollup"><i class="fas fa-angle-up fa-2x"></i></a>
     <!-- javascript -->
     <script src="{{ url_for('static', filename='js/jquery-1.9.1.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/jquery.easing.js') }}"></script>
@@ -247,36 +265,20 @@
   $("#slippry-slider").slippry(
     (defaults = {
       adaptiveHeight: false,
-      transition: "kenburns",
-      kenZoom: 100,
+      transition: "vertical",
+    //   kenZoom: 25,
       useCSS: true,
       speed: 5000,
       pause: 3000,
       initSingle: false,
-      auto: true,
+      autoHover: false,
       preload: "visible",
-      pager: false
+      pager: false,
+      controls: false
     })
   );
 });
 </script>
-
-
-    <!-- <script src="https://form.jotformeu.com/static/feedback2.js" type="text/javascript">
-      new JotformFeedback({
-        formId: "92904979708374",
-        buttonText: "PRENOTARE UN TAVOLO / BOOKING REQUEST",
-        base: "https://form.jotformeu.com/",
-        background: "#550026",
-        fontColor: "#FFFFFF",
-        buttonSide: "left",
-        buttonAlign: "bottom",
-        type: 1,
-        width: 700,
-        height: 500,
-        isCardForm: false
-      });
-    </script> -->
 
     <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
     <!--<script src="{{ url_for('static', filename='js/contactform.js') }}"></script>-->
