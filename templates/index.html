@@ -43,7 +43,7 @@
               <nav>
                 <ul class="nav navbar-nav navbar-right" margin-top="0px">
                   <li class="current"><a href="#intro"><i class="fas fa-home fa-2x" aria-hidden="false"></i></a></li>
-                  <li><a href="#menu">Menù</a></li>
+                  <li><a href="#menu">Carta e Menù</a></li>
                   <li><a href="#foto">Foto</a></li>
                   <li><a href="#contact">Contatto</a></li>
                 </ul>
@@ -77,13 +77,14 @@
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
             <div class="heading">
-              <h3><span>Menù</span></h3>
+              <h3><span>Carta / Menù</span></h3>
             </div>
             <div class="sub-heading">
               <p>
-                <a href="{{ url_for('static', filename='img/menu.pdf') }}" download="menu_alkima_inverno" class="btn btn-lg btn-theme">Menù Invernale / Winter Menu</a>
-                <!-- <a href="{{ url_for('static', filename='img/proposta_pranzo.pdf') }}" download="menu_pranzo_feriale" class="btn btn-lg btn-theme">Pranzo Feriale</a> -->
-                <!--<a href="{{ url_for('static', filename='img/Menu_PesaVegia_2020.pdf') }}" download="menu_da_asporto" class="btn btn-lg btn-theme">Pesa Vegia 2020</a>-->
+                <a target="_blank" rel="noopener noreferrer" href="{{ url_for('static', filename='img/carta.pdf') }}" download="menu_alkima_estate" class="btn btn-lg btn-theme">Carta Estiva / Summer Menu</a>
+                <!--<a target="_blank" rel="noopener noreferrer" href="{{ url_for('static', filename='img/proposta_weekend.pdf') }}" download="menu_weekend_alkimia_esempio" class="btn btn-lg btn-theme">Menù Fine Settimana (esempio tipico) / Weekend Prix Fixe Menu (sample)</a>-->
+                <!--<a target="_blank" rel="noopener noreferrer" href="{{ url_for('static', filename='img/menu_weekend_ferragosto2020.pdf') }}" download="menu_ferragosto_alkimia" class="btn btn-lg btn-theme">Menù Ferragosto / Ferragosto Menu (15-16/08)</a>-->
+                <!--<a target="_blank" rel="noopener noreferrer" href="{{ url_for('static', filename='img/proposta_pranzo.pdf') }}" download="menu_pranzo_alkimia_esempio" class="btn btn-lg btn-theme">Speciale Pranzo Feriale (esempio tipico) / Weekday Lunch Special (sample)</a>-->
               </p>
             </div>
           </div>
@@ -170,7 +171,7 @@
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
           <div class="heading">
-            <h3><span>Contatto</span></h3>
+            <h3><span>Contatti</span></h3>
           </div>
           <div class="sub-heading">
             <!-- <p>
@@ -184,14 +185,23 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h4><strong>12.00-14.00 | 19.30-22.00</strong></h4>
-          <h4><strong>chiuso Martedì sera e Mercoledì</strong></h4>
-          <h4>(closed Tuesday night & Wednesday)</h4>
-          <a href="https://form.jotformeu.com/92904979708374" class="btn btn-lg btn-theme">Prenotare / Request Booking</a>
-          &nbsp;
-          <h4><i class="fas fa-phone-alt"></i>&nbsp;(fisso):&nbsp;&nbsp;<a href="tel:+3903411691212">0341 1691212</a></h4>
-          <h4><i class="fas fa-phone-alt"></i>&nbsp;(SMS/English):&nbsp;&nbsp;<a href="tel:+393496064667">349 60 64 667</h4>
-          <a href="https://form.jotformeu.com/193462964186369" class="btn btn-lg btn-theme">Collaborare con Noi</a>
+          <div class="aligncenter">
+            <h4><strong>12.00-14.30</strong></h4>
+            <h4><strong>19.00-22.00</strong></h4>
+            <!--<h4><strong>aperto tutti i giorni a pranzo</strong></h4>-->
+            <h4><strong>chiuso il Mercoledì</strong></h4>
+            <h4>(closed Wednesdays)</h4>
+            <!--<h4>(open for lunch only)</h4>-->
+            <!--<h4><strong>chiuso per ferie Ottobre 19-23</strong></h4>-->
+            <a target="_blank" rel="noopener noreferrer" href="https://form.jotformeu.com/92904979708374" class="btn btn-lg btn-theme"><i class="fas fa-utensils"></i>&nbsp;&nbsp;Prenotare / Request Booking&nbsp;&nbsp;<i class="fas fa-utensils"></i></a>
+            &nbsp;
+            <h4><i class="fas fa-phone-alt"></i>&nbsp;(fisso):&nbsp;&nbsp;<a href="tel:+3903411691212">0341 1691212</a></h4>
+            <h4><i class="fas fa-phone-alt"></i>&nbsp;(SMS/English):&nbsp;&nbsp;<a href="tel:+393714908476">371 49 08 476</h4>
+            &nbsp;
+            <p><a target="_blank" rel="noopener noreferrer" href="https://form.jotform.com/200125497227048" class="btn btn-lg btn-theme"><i class="fas fa-envelope"></i>&nbsp;&nbsp;Scriverci / Write to Us&nbsp;&nbsp;<i class="fas fa-envelope"></i></a></p>
+            <p><a target="_blank" rel="noopener noreferrer" href="http://eepurl.com/gOXyc5" class="btn btn-lg btn-theme"><i class="fas fa-pencil-alt"></i>&nbsp;&nbsp;Iscrivere alla Newsletter&nbsp;&nbsp;<i class="fas fa-pencil-alt"></i></a></p>
+            <p><a target="_blank" rel="noopener noreferrer" href="https://form.jotformeu.com/193462964186369" class="btn btn-lg btn-theme"><i class="fas fa-user-tie"></i>&nbsp;&nbsp;Collaborare con Noi&nbsp;&nbsp;<i class="fas fa-user-tie"></i></a></p>
+          </div>
         </div>
         <div class="col-md-6">
           <!--<h4><i class="icon-envelope"></i><strong>Dove siamo</strong></h4>-->
